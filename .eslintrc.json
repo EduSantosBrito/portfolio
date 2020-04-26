@@ -1,0 +1,40 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "parser": "babel-eslint",
+    "extends": ["airbnb", "prettier"],
+    "globals": {
+        "it": "readonly",
+        "describe": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2019,
+        "sourceType": "module",
+        "allowImportExportEverywhere": true
+    },
+    "plugins": ["prettier", "react", "react-hooks"],
+    "rules": {
+        "no-underscore-dangle": "off",
+        "react/jsx-wrap-multilines": "off",
+        "react/jsx-curly-newline": "off",
+        "react/prop-types": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/jsx-indent-props": "off",
+        "prettier/prettier": ["error"],
+        "strict": ["error", "global"],
+        "class-methods-use-this": "off",
+        "object-curly-newline": "off",
+        "global-require": "off",
+        "arrow-parens": ["error", "as-needed"],
+        "no-param-reassign": ["error", { "props": false }],
+        "react/jsx-indent": "off",
+        "react/jsx-one-expression-per-line": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn"
+    }
+}
